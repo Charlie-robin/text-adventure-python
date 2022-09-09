@@ -1,0 +1,87 @@
+[
+  {
+    "id": "story_0",
+    "title": "quit",
+    "type": "exit",
+    "body": "Are you sure you want to quit?",
+    "options": [
+      { "text": "Go Back", "next_story_id": "story_1" },
+      { "text": "Quit", "next_story_id": "story_0" }
+    ]
+  },
+  {
+    "id": "story_1",
+    "title": "Dusty path",
+    "type": "story",
+    "body": "You have spent an eternity on this path. It feels like an old companion. Ahead there is a fork in the road. To the east lies an open meadow, and to the west is a thick woodland. The old faithful dusty path is still behind you.",
+    "options": [
+      { "text": "Open Meadow", "next_story_id": "story_2" },
+      { "text": "Thick Woodland", "next_story_id": "story_3" },
+      { "text": "Walk down the path", "next_story_id": "story_0" }
+    ]
+  },
+  {
+    "id": "story_2",
+    "title": "Open Meadow",
+    "type": "story",
+    "body": "Dang, this is one open meadow. You can see a wooden fence surrounding a small village. There is a steep hill as well...",
+    "options": [
+      { "text": "Fenced Village", "next_story_id": "story_7" },
+      { "text": "Hill", "next_story_id": "story_4" }
+    ]
+  },
+  {
+    "id": "story_3",
+    "title": "Thick woods",
+    "type": "story",
+    "body": "Dang, this is one thick woodland. It is getting darker and damper as you venture deeper into the forest. What will do head into the dark or into the damp?",
+    "options": [
+      { "text": "The Dark", "next_story_id": "story_5" },
+      { "text": "The Damp", "next_story_id": "story_6" }
+    ]
+  },
+  {
+    "id": "story_4",
+    "title": "Hill",
+    "type": "story",
+    "body": "hmmm its is just a hill... it's not bad I wouldn't say its good but I have never really said hill is either. ",
+    "options": [
+      { "text": "Stay", "next_story_id": "story_4" },
+      { "text": "Head back to the Meadow", "next_story_id": "story_2" }
+    ]
+  },
+  {
+    "id": "story_5",
+    "title": "Lake",
+    "type": "story",
+    "body": "The woods begins to ease and a fresh breeze starts to break its way through the trees. You break through the thicket and see a glorious lake.",
+    "options": [
+      { "text": "Stay", "next_story_id": "story_4" },
+      { "text": "Head back into the Thick Woods", "next_story_id": "story_3" }
+    ]
+  },
+  {
+    "id": "story_6",
+    "title": "Swamp",
+    "type": "story",
+    "body": "It is damp and getting ever so humid as the woodland subsides and gives way to a festering swamp. There is a stream in one direction and stepping stones in the other. Which one will you follow?",
+    "options": [
+      { "text": "Stream", "next_story_id": "story_5" },
+      { "text": "Stepping stones", "next_story_id": "story_7" }
+    ]
+  },
+  {
+    "id": "story_7",
+    "title": "Village",
+    "type": "story",
+    "body": "As approach you notice that this village is empty, the road is leading to a castle",
+    "options": [{ "text": "Castle", "next_story_id": "story_8" }]
+  },
+  {
+    "id": "story_8",
+    "title": "Castle",
+    "type": "story",
+    "body": "Welcome to the Castle",
+    "options": [{ "text": "Castle", "next_story_id": "story_0" }]
+  }
+]
