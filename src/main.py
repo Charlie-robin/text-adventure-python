@@ -1,8 +1,8 @@
-from controller.TextAdventure import TextAdventureController
-from model.GameRepository import GameRepository
+from controller.GameController import GameController
+from controller.UserController import UserController
 
+user_controller = UserController()
+user_controller.run()
 
-game_repository = GameRepository("Leroy")
-text_adventure = TextAdventureController(game_repository)
-text_adventure.run()
-
+game_controller = GameController(user_controller.get_user_name())
+game_controller.run()

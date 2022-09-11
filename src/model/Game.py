@@ -2,8 +2,8 @@ from datetime import datetime
 
 
 class Game:
-    def __init__(self, player):
-        self._player = player
+    def __init__(self, user):
+        self._user = user
         self._time_started = datetime.now()
         self._time_finished = None
         self._number_of_turns = 0
@@ -20,7 +20,7 @@ class Game:
 
     def __dict__(self):
         return {
-            "player": self._player,
+            "user": self._user,
             "time_started": self._time_started,
             "time_finished": self._time_finished,
             "number_of_turns": self._number_of_turns,
@@ -30,7 +30,7 @@ class Game:
     @staticmethod
     def field_names():
         return [
-            "player",
+            "user",
             "time_started",
             "time_finished",
             "number_of_turns",

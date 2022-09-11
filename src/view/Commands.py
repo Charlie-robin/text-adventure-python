@@ -22,6 +22,12 @@ class Commands:
     def get_commands_choice(self):
         return self._get_integer_input(self._start, self._limit)
 
+    def get_user_text_input(self, message = ""):
+        if message :
+            self.print_title_block(message)
+        return input()    
+
+
     def print_title_block(self, title, end_space = True, end_character = "*"):
         title_length = len(title)
         if title_length <= self._line_width - 4:
@@ -51,7 +57,6 @@ class Commands:
     
     def _get_integer_input(self, start, limit):
         print(TextFormatter.pad_text(f"Please enter a number between {start} - {limit}", self._line_width,"|"), )
-
         
         try:
           user_input = int(input())

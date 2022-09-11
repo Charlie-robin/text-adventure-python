@@ -1,6 +1,7 @@
-player,time_started,time_finished,number_of_turns,completed_quest
+user,time_started,time_finished,number_of_turns,completed_quest
 Charlie,2022-09-10 23:19:38.853249,,0,False
 Leroy,2022-09-10 23:33:21.321216,2022-09-10 23:33:27.515605,1,False
 Leroy,2022-09-10 23:33:43.190825,2022-09-10 23:33:47.277554,1,False
 Leroy,2022-09-10 23:34:01.570345,2022-09-10 23:34:14.439654,4,False
 Leroy,2022-09-10 23:36:30.077517,2022-09-10 23:36:36.377475,1,False
+Charlie,2022-09-11 23:03:31.631011,2022-09-11 23:03:44.092555,1,False

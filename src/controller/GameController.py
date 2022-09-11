@@ -4,9 +4,9 @@ from view.LevelCommands import LevelCommands
 from view.QuitCommands import QuitCommands
 
 
-class TextAdventureController:
-    def __init__(self, game_repository):
-        self._game_repository = game_repository
+class GameController:
+    def __init__(self, user_name):
+        self._game_repository = GameRepository(user_name)
 
     def run(self):
 
