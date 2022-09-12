@@ -1,6 +1,7 @@
 from model.LevelRepository import LevelRepository
 from model.GameRepository import GameRepository
 from view.LevelCommands import LevelCommands
+from view.LevelEndCommands import LevelEndCommands
 from view.QuitCommands import QuitCommands
 
 
@@ -15,11 +16,16 @@ class GameController:
 
         while True:
             level = level_repository.get_level_by_id(next_level)
-            if level.type == "story":
+            if level.type == "level":
                 current_commands = LevelCommands(level)
                 current_commands.run()
                 next_level = current_commands.choice
                 self._game_repository.increment_turns()
+            elif level.type == "level-end":
+                current_commands = LevelEndCommands(level)
+                current_commands.run()
+                self._game_repository.complete_game()
+                break
             else:
                 current_commands = QuitCommands(level)
                 current_commands.run()

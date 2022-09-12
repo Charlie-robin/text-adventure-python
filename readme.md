@@ -8,7 +8,7 @@ A project playground for learning:
 ## Branches
 
 - `main` -> The python project
-- `vagrant` _> The vagrant project
+- `vagrant` -> The vagrant project
 
 ### Python Project Brief
 

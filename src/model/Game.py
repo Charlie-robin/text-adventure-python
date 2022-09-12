@@ -16,7 +16,7 @@ class Game:
         self._time_finished = datetime.now()
 
     def complete_quest(self):
-        self._time_finished = True
+        self._completed_quest = True
 
     def __dict__(self):
         return {

@@ -12,6 +12,10 @@ class GameRepository:
     def increment_turns(self):
         self._game.increment_turns()
 
+    def complete_game(self):
+        self._game.complete_quest()
+        self.quit_game()    
+
     def quit_game(self):
         self._game.set_time_finished()
         self._append_game_to_csv()
