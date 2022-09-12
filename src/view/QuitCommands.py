@@ -1,11 +1,12 @@
 from view.Commands import Commands
 
 class QuitCommands(Commands):
-    _has_quit = False
 
     def __init__(self, level):
         super().__init__(level.get_options_text())
         self._level = level
+        self._has_quit = False
+        self._choice = None
 
     def run(self):
         self.print_title_block(self._level.title)
@@ -17,3 +18,7 @@ class QuitCommands(Commands):
     @property
     def has_quit(self):
         return self._has_quit    
+
+    @property
+    def choice(self):
+        return self._choice

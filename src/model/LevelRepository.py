@@ -6,8 +6,8 @@ from model.Option import Option
 class LevelRepository:
     _database = {}
 
-    def __init__(self):
-        file = open("./data/levels.json")
+    def __init__(self, file_path):
+        file = open(file_path)
         levels = json.load(file)
         
         for level in levels:

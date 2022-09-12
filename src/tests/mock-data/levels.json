@@ -1,0 +1,12 @@
+[
+  {
+    "id": "story_0",
+    "title": "quit",
+    "type": "quit",
+    "body": "Are you sure you want to quit?",
+    "options": [
+      { "text": "Go Back", "next_story_id": "story_1" },
+      { "text": "Quit", "next_story_id": "story_0" }
+    ]
+  }
+]

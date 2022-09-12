@@ -11,7 +11,7 @@ class GameController:
 
     def run(self):
 
-        level_repository = LevelRepository()
+        level_repository = LevelRepository("./data/levels.json")
         next_level = "story_1"
 
         while True:
