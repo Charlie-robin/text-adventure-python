@@ -1,10 +1,36 @@
-# Python Project
+# Vagrant Branch
 
-This project consists of making a 'choose your own adventure' text based story/game that executes in the console.
+## Overview
 
-## Requirements:
+On this Branch I have provisioned a Virtual Machine(VM) using Vagrant & Virtual Box.
 
-- Classes (cat least one, but if you want to get fancy and can work in inheritance, feel free)
-- Functions
-- Control flow (if/elif/else)
-- Logging the decisions to log files or to csv (or both) <- the rest is flexible, but this is necessary
+The VM has a synced folder meaning the text-adventure python project can be ran on the VM.
+
+The provisioning script `env/python_provisioning` sets up the VM.
+
+The `Vagrantfile` configures it.
+
+## Setup
+
+You will need both:
+
+- Vagrant
+- Virtual Box
+
+In the project home directory run
+
+```bash
+vagrant up
+```
+
+Once provisioning is completed run
+
+```bash
+vagrant ssh
+```
+
+Once connected to the machine run to start the project
+
+```bash
+python3 app/main.py
+```
