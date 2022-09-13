@@ -10,6 +10,8 @@ A project playground for learning:
 - `main` -> The python project
 - `vagrant` -> The vagrant project
 
+## Briefs
+
 ### Python Project Brief
 
 This project consists of making a 'choose your own adventure' text based story/game that executes in the console.
@@ -30,6 +32,7 @@ GitHub repo matching the following file structure:
 |   |-- python_provisioning.sh
 |-- Vagrantfile
 ```
+#### Todo
 
 1. A python_provisioning.sh that provisions the VM to run your Python App
 2. We should be able to run vagrant up and then vagrant ssh into the VM and run your Python Project
