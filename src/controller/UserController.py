@@ -7,7 +7,7 @@ class UserController:
         self._user_commands = UserCommands(
             ["Create a User"], "Welcome to the Text Adventure", "Greetings Pilgrim..."
         )
-        self._user_repository = UserRepository()
+        self._user_repository = UserRepository("./data/users.csv")
         self._user = None
 
     def get_user_name(self):

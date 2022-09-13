@@ -4,30 +4,33 @@ from model.LevelRepository import LevelRepository
 from model.Level import Level
 from model.Option import Option
 
+
 class TestLevelRepository(unittest.TestCase):
     _level_repository = LevelRepository("./tests/mock-data/levels.json")
-    _options = [Option("Go Back","story_1"), Option("Quit","story_0") ]
-    _level_zero = Level("story_0","quit","Are you sure you want to quit?", _options ,"quit")
+    _options = [Option("Go Back", "story_1"), Option("Quit", "story_0")]
+    _level_zero = Level(
+        "story_0", "quit", "Are you sure you want to quit?", _options, "quit"
+    )
 
     # get_level_by_id()
 
     def test_get_level_by_id_handles_correct_id(self):
         result = self._level_repository.get_level_by_id("story_0")
         # Class values Equality
-        self.assertEquals(result.id, self._level_zero.id)
-        self.assertEquals(result.title, self._level_zero.title)
-        self.assertEquals(result.body, self._level_zero.body)
-        self.assertEquals(result.type, self._level_zero.type)
+        self.assertEqual(result.id, self._level_zero.id)
+        self.assertEqual(result.title, self._level_zero.title)
+        self.assertEqual(result.body, self._level_zero.body)
+        self.assertEqual(result.type, self._level_zero.type)
         for index, item in enumerate(result.options):
-            self.assertEquals(item.text, self._level_zero.options[index].text)
-            self.assertEquals(item.next_story_id, self._level_zero.options[index].next_story_id)
-
+            self.assertEqual(item.text, self._level_zero.options[index].text)
+            self.assertEqual(
+                item.next_story_id, self._level_zero.options[index].next_story_id
+            )
 
     def test_get_level_by_id_incorrect_id_raises_exception(self):
         with self.assertRaises(Exception):
-            self._level_repository.get_level_by_id("story_1")     
+            self._level_repository.get_level_by_id("story_1")
 
 
-   
 if __name__ == "__main__":
-    unittest.main()   
+    unittest.main()
