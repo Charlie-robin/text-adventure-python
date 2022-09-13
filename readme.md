@@ -23,9 +23,13 @@ This project consists of making a 'choose your own adventure' text based story/g
 
 GitHub repo matching the following file structure:
 
-- app/your-source-code
-- env/python_provisioning.sh
-- Vagrantfile
+```
+|-- app
+|   |-- your-source-code
+|-- env
+|   |-- python_provisioning.sh
+|-- Vagrantfile
+```
 
 1. A python_provisioning.sh that provisions the VM to run your Python App
 2. We should be able to run vagrant up and then vagrant ssh into the VM and run your Python Project
