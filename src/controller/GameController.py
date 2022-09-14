@@ -6,8 +6,8 @@ from view.QuitCommands import QuitCommands
 
 
 class GameController:
-    def __init__(self, user_name):
-        self._game_repository = GameRepository(user_name)
+    def __init__(self, user):
+        self._game_repository = GameRepository(user)
 
     def run(self):
 

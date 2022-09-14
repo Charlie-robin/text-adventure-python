@@ -5,6 +5,23 @@ A project playground for learning:
 - Python
 - Vagrant, Virtual Box
 
+## Run
+
+To run the Python project or unit tests from the command line.
+
+```bash
+cd src
+
+# RUN PROGRAM
+python .main.py
+
+# RUN TESTS
+python -m unittest
+
+```
+
+_Vagrant instructions are on the branches readme_
+
 ## Branches
 
 - `main` -> The python project
@@ -32,7 +49,8 @@ GitHub repo matching the following file structure:
 |   |-- python_provisioning.sh
 |-- Vagrantfile
 ```
-#### Todo
+
+**Todo**
 
 1. A python_provisioning.sh that provisions the VM to run your Python App
 2. We should be able to run vagrant up and then vagrant ssh into the VM and run your Python Project
@@ -40,3 +58,5 @@ GitHub repo matching the following file structure:
    - How to run the environment?
    - What dependencies you need to run the environment (i.e. Vagrant, Virtualbox)
    - How to run your project on the VM? (What steps do I need to do to see your project working once I have ssh’d into it?)
+
+---
