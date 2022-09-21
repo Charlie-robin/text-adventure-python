@@ -1,5 +1,5 @@
-from model.LevelRepository import LevelRepository
-from model.GameRepository import GameRepository
+from model.level.LevelRepository import LevelRepository
+from model.game.GameRepository import GameRepository
 from view.LevelCommands import LevelCommands
 from view.LevelEndCommands import LevelEndCommands
 from view.QuitCommands import QuitCommands

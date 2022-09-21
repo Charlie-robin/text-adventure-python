@@ -1,6 +1,6 @@
 import csv
 
-from model.Game import Game
+from model.game.Game import Game
 
 
 class GameRepository:

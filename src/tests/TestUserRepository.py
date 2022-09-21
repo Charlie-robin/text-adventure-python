@@ -1,8 +1,8 @@
 import csv
 import unittest
 
-from model.UserRepository import UserRepository
-from model.User import User
+from model.user.UserRepository import UserRepository
+from model.user.User import User
 
 class TestUserRepository(unittest.TestCase):
     _file_location = "./tests/mock-data/users.csv"

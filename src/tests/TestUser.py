@@ -1,7 +1,7 @@
 import unittest
 import csv
 
-from model.User import User
+from model.user.User import User
 
 
 class TestUser(unittest.TestCase):

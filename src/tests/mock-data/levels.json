@@ -2,7 +2,7 @@
   {
     "id": "story_0",
     "title": "quit",
-    "type": "quit",
+    "type": "story",
     "body": "Are you sure you want to quit?",
     "options": [
       { "text": "Go Back", "next_story_id": "story_1" },

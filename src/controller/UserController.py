@@ -1,5 +1,5 @@
 from view.UserCommands import UserCommands
-from model.UserRepository import UserRepository
+from model.user.UserRepository import UserRepository
 
 
 class UserController:

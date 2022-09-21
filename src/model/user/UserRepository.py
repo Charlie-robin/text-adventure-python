@@ -1,7 +1,7 @@
 import csv
 import uuid
 
-from model.User import User
+from model.user.User import User
 
 
 class UserRepository:
