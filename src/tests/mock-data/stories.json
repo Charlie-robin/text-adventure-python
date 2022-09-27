@@ -1,0 +1,22 @@
+[
+  {
+    "id": "story_0",
+    "title": "Test Story",
+    "type": "story",
+    "body": "Are you sure you want to quit?",
+    "options": [
+      { "text": "Go Back", "next_story_id": "story_1" },
+      { "text": "Quit", "next_story_id": "story_0" }
+    ]
+  },
+  {
+    "id": "story_1",
+    "title": "Test Mystery",
+    "type": "mystery",
+    "body": "Are you sure you want to quit?",
+    "options": [
+      { "text": "Go Back", "next_story_id": "story_1" },
+      { "text": "Quit", "next_story_id": "story_0" }
+    ]
+  }
+]

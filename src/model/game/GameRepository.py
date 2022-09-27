@@ -8,9 +8,13 @@ class GameRepository:
 
     def __init__(self, user):
         self._game = Game(user.id, user.user_name)
+        self._visited_levels = []
 
     def increment_turns(self):
         self._game.increment_turns()
+
+    def visit_level(self, level_id):
+        self._visited_levels.append(level_id)    
 
     def complete_game(self):
         self._game.complete_quest()

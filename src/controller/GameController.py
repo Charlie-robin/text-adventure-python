@@ -11,7 +11,7 @@ class GameController:
 
     def run(self):
 
-        level_repository = LevelRepository("./data/levels.json")
+        level_repository = LevelRepository("./data/stories.json")
         next_level = "story_1"
 
         while True:
@@ -21,6 +21,7 @@ class GameController:
                 current_commands.run()
                 next_level = current_commands.choice
                 self._game_repository.increment_turns()
+                self._game_repository.visit_level(current_commands.level_id)
             elif level.type == "level-end":
                 current_commands = LevelEndCommands(level)
                 current_commands.run()

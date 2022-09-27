@@ -24,6 +24,7 @@ class LevelRepository:
                         Mystery(level["id"], level["title"], level["body"], options)
                     )
                 case _:
+                    print(level["type"].upper())
                     raise Exception("LEVEL TYPE DOES NOT MATCH")
 
         file.close()

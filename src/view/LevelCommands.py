@@ -6,6 +6,7 @@ class LevelCommands(Commands):
         super().__init__(level.get_options_text())
         self._level = level
         self._choice = None
+        self._level_id = level.id
 
     def run(self):
         self.print_title_block(self._level.title)
@@ -17,3 +18,7 @@ class LevelCommands(Commands):
     @property
     def choice(self):
         return self._choice
+
+    @property
+    def level(self):
+        return self._level
