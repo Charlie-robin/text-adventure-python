@@ -1,0 +1,9 @@
+[
+  {
+    "id": "story_7",
+    "title": "Village",
+    "type": "story",
+    "body": "As approach you notice that this village is empty, the road is leading to a castle",
+    "options": [{ "text": "Castle", "next_story_id": "story_8" }]
+  }
+]

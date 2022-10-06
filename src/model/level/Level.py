@@ -10,6 +10,9 @@ class Level:
     def get_options_text(self):
         return list(map(lambda option : option.text, self._options))    
 
+    def get_options_id(self):
+        return list(map(lambda option : option.next_story_id, self._options))    
+
     @property
     def id(self):
         return self._id

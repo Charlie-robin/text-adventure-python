@@ -1,15 +1,5 @@
 [
   {
-    "id": "story_0",
-    "title": "quit",
-    "type": "quit",
-    "body": "Are you sure you want to quit?",
-    "options": [
-      { "text": "Go Back", "next_story_id": "story_1" },
-      { "text": "Quit", "next_story_id": "story_0" }
-    ]
-  },
-  {
     "id": "story_1",
     "title": "Dusty path",
     "type": "story",
@@ -41,26 +31,6 @@
     ]
   },
   {
-    "id": "story_4",
-    "title": "Hill",
-    "type": "story",
-    "body": "hmmm its is just a hill... it's not bad I wouldn't say its good but I have never really said hill is either. ",
-    "options": [
-      { "text": "Stay", "next_story_id": "story_4" },
-      { "text": "Head back to the Meadow", "next_story_id": "story_2" }
-    ]
-  },
-  {
-    "id": "story_5",
-    "title": "Lake",
-    "type": "story",
-    "body": "The woods begins to ease and a fresh breeze starts to break its way through the trees. You break through the thicket and see a glorious lake.",
-    "options": [
-      { "text": "Stay", "next_story_id": "story_4" },
-      { "text": "Head back into the Thick Woods", "next_story_id": "story_3" }
-    ]
-  },
-  {
     "id": "story_6",
     "title": "Swamp",
     "type": "story",
@@ -69,19 +39,5 @@
       { "text": "Stream", "next_story_id": "story_5" },
       { "text": "Stepping stones", "next_story_id": "story_7" }
     ]
-  },
-  {
-    "id": "story_7",
-    "title": "Village",
-    "type": "story",
-    "body": "As approach you notice that this village is empty, the road is leading to a castle",
-    "options": [{ "text": "Castle", "next_story_id": "story_8" }]
-  },
-  {
-    "id": "story_8",
-    "title": "Castle",
-    "type": "level-end",
-    "body": "Welcome to the Castle",
-    "options": []
   }
 ]
